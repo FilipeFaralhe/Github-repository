@@ -1,0 +1,56 @@
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8e44ad;
+}
+
+section.repository-list {
+  margin: 2rem 0;
+  background-color: white;
+  width: 500px;
+  max-width: 700px;
+  border-radius: 8px;
+  
+  h1 {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  ul {
+    list-style: none;
+    padding: 1.2rem;
+    li {
+      border-bottom: 2px solid #444;
+      
+      & + li { // sempre que tiver uma li depois de outra li, aplicar margin
+        margin-top: 20px;  
+      }
+
+      p {
+        font-size: 14px;
+        color: #444;
+        margin-top: 8px;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0.5rem 0;
+        text-decoration: none;
+        
+        
+        background-color: aqua;
+        color: white;
+        
+        width: 150px;
+        height: 2rem;
+        
+        border-radius: 4px;
+      }
+    }
+
+  }
+}
